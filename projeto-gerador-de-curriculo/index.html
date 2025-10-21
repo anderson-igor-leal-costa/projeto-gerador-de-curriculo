@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Criador de Curriculum Vitae </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilop.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+</head>
+<body>
+	
+		<header>
+			
+			<div class="header">
+				<h1 class="cv">Criador de Curriculum Vitae</h1>
+				<h3>Tudo começa com a primeira impressão, e o currículo é o seu cartão de visita!</h3>
+			</div>
+		</header>
+
+	<div class="principal">
+			<div class="sejabemvindo">
+			 <h1  style="text-align: center;">Seja bem-vindX!</h1>
+        <h3>Esse site é para você que não tem o famoso <i>currículo vitae pronto.</i>
+        Criei este projeto com objetivo de ajudar você a fazer um currículo bem apresentável e competitivo, não descartável e que não vai passar desapercebido pela mão do RH :) </h3>
+ 			</div>
+			
+
+			<fieldset>
+				<legend>
+					<h2>SITUAÇÃO ATUAL NO MERCADO DE TRABALHO</h2>
+				</legend>
+			<form method="post" action="imprime.php">
+					<select name="emprego" style="width: 100%;">
+					<option value="emprego" name="emprego"></option>
+								<option value="estagio" name="emprego">Procuro um estágio</option>
+								<option value="primeiro-emprego" name="emprego">Procuro meu primeiro emprego</option>
+								<option value="desempregado" name="emprego">Estou desempregado(a), a procura de um emprego</option>
+								<option value="seguro-desemprego" name="emprego">Estou no seguro-desemprego</option>
+								<option value="aviso-previo" name="emprego">Estou empregado(a), mas cumprindo aviso prévio</option>
+								<option value="empregado" name="emprego">Estou empregado(a), mas quero mudar de emprego</option>
+								<option value="autônomo" name="emprego">Sou autônomo(a), mas quero um emprego(a)</option>
+								
+			      	</select>
+			
+			</fieldset>
+
+			<fieldset>
+				<legend>
+					<h2>DADOS PESSOAIS</h2>
+				</legend>
+			
+					<div class="dadosplinha1">
+						<label>Nome Completo</label> <input type="text" name="nome" placeholder="Letras iniciais em Maiúscula"title="Informe seu nome completo" >
+						<span class="error">* <?php echo $nameErr;?></span>
+						&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+						<label>Nacionalidade</label> <input type="text" name="nacionalidade" placeholder="País onde você nasceu" title="Qual país você nasceu?"> <span class="error">* <?php echo $nameErr;?></span>
+						&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+						<label>Naturalidade</label> <input type="text" name="naturalidade" placeholder="Onde você nasceu e UF"><span class="error">* <?php echo $nameErr;?></span>
+						&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+						<label>Idade:</label> <input type="tel" name="data" placeholder="Ex.: 29 anos"size="10px"> <span class="error">* <?php echo $nameErr;?></span>
+					</div>
+					
+					<div class="dadosplinha2">
+									
+						<label>RG</label> <input type="tel" name="RG" placeholder="578964" maxlength="11"size="11"> &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp 
+						<label>CPF</label> <input type="tel" name="CPF" placeholder="66598574211" maxlength="11" size="11" title="Não insira pontos e nem o hífen"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+						<label>Estado Civil</label> 
+						<select name="estadocivil">
+							<option value="estadocivil" name="estadocivil"></option>
+								<option value="1" name="estadocivil">Solteiro(a)</option>
+								<option value="2" name="estadocivil">Casado(a)</option>
+								<option value="3" name="estadocivil">União Estável</option>
+								<option value="4" name="estadocivil">Separado(a)</option>
+								<option value="5" name="estadocivil">Divorciado(a)</option>
+								<option value="6" name="estadocivil">Viúvo(a)</option>	
+						</select> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			
+						<label>Você tem filhos(as)?</label>
+						<select name="vctemfilhos">
+									<option value="" name="vctemfilhos"></option>
+									<option value="S" name="vctemfilhos">Sim</option>
+									<option value="N" name="vctemfilhos">Não</option>
+									
+						</select>&nbsp &nbsp &nbsp &nbsp &nbsp 
+						<label>Sexo</label>
+						<select name="sexo">
+							<option name="vctemfilhos"></option>
+							<option name="vctemfilhos">Masculino</option>
+							<option name="vctemfilhos">Feminino</option>
+							<option name="vctemfilhos">Outro</option>
+						</select>
+					</div>
+
+						<div class="dadosplinha3">
+					<label>Endereço</label> <input type="text" name="endereco" placeholder="Rua ou Avenida" size="28px"><span class="error">* <?php echo $nameErr;?></span>&nbsp &nbsp &nbsp
+					
+					
+					<label>Número</label> <input type="tel" name="numero" placeholder="Rua ou Avenida" size="15px"> <span class="error">* <?php echo $nameErr;?></span>&nbsp &nbsp &nbsp
+					
+					<label>Estado</label> <input type="text" name="estado" placeholder="Estado onde você mora atualmente" size="28px"> <span class="error">* <?php echo $nameErr;?></span>&nbsp &nbsp &nbsp 
+					<label>Cidade</label> <input type="text" name="cidade" placeholder="Cidade onde você mora atualmente" size="28"> <span class="error">* <?php echo $nameErr;?></span>
+					
+					</div>
+
+					<div class="dadosplinha4">
+					<label>Telefone Fixo</label> <input type="tel" name="telefonefixo">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+					<label>Celular</label> <input type="tel" name="celular"><span class="error">* <?php echo $nameErr;?></span>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+					<label>E-mail</label> <input type="email" name="email"><span class="error">* <?php echo $nameErr;?></span>
+					</div>
+			
+			</fieldset>
+
+
+			<fieldset>
+				<legend>
+					<h2>OBJETIVO?<span class="error">* <?php echo $nameErr;?></span></h2>
+				</legend>
+				
+				<div>
+					<textarea name="objetivo" >"Insira a vaga a qual você quer concorrer na empresa. Ex.: Atuar como assistente administrativo."</textarea>
+					
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>
+					<h2>FORMAÇÃO ACADÊMICA</h2>
+				</legend>
+			
+					
+					<div class="dadosplinha5" >
+						<label>Curso:</label>
+						<input type="text" name="formacaoacademicacurso"><span class="error">* <?php echo $nameErr;?></span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+						<label>Instituição</label>
+						<input type="text" name="instituicaoformacaoacad"><span class="error">* <?php echo $nameErr;?></span>
+					</div>
+
+					<div class="dadosplinha6">
+					
+						<label>Início</label>
+							<input type="month" name="formacaomesanoinio"><span class="error">* <?php echo $nameErr;?></span>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+						<label>Situação atual</label>
+						<select name="situacaodocurso"><span class="error">* <?php echo $nameErr;?></span>
+							<option name="situacaodocurso"></option>
+							<option name="situacaodocurso">Concluído em:</option>
+							<option name="situacaodocurso">Previsão de Conclusão</option><span class="error">* <?php echo $nameErr;?></span>
+						</select>
+						 Mês e ano: <input type="month" name="formacaomesanosaida"><span class="error">* <?php echo $nameErr;?></span>
+
+					 </div>
+			
+			</fieldset>
+
+
+			<fieldset>
+				<legend>
+					<h2>EXPERIÊNCIA PROFISSIONAL</h2>
+				</legend>
+			
+					
+					<div class="dadosplinha7">
+						<label>Empresa:</label>
+						<input type="text" name="empresa"> <span class="error">* <?php echo $nameErr;?></span>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+						<label>Cargo</label>
+						<input type="text" name="cargo"><span class="error">* <?php echo $nameErr;?></span>
+					
+
+					<div class="dadosplinha8">
+						<label>Início em</label>
+						<input type="date" id="diaa" name="iniciaexp"><span class="error">* <?php echo $nameErr;?></span>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+						<label>Situação atual</label>
+						<select name="situacaodoemprego">
+							<option name="situacaodoemprego"></option>
+							<option name="situacaodoemprego">Saída em:</option>
+							<option name="situacaodoemprego">Emprego atual</option>
+						 Mês e ano: <input type="date" name="saidaaexp"><span class="error">* <?php echo $nameErr;?></span>
+					
+					</div>
+
+					<div>
+						<label>Principais atividades desempenhadas no cargo<span class="error">* <?php echo $nameErr;?></span></label> <br>
+						<textarea name="principaisatividades"></textarea>
+
+					
+		
+			</fieldset>
+
+			<fieldset>
+				<legend>
+					<h2>QUALIFICAÇÕES PROFISSIONAIS</h2>
+				</legend>
+			
+					
+				<div class="dadosplinha9">
+						<label>Curso:</label>
+						<input type="text" name="qualificacaocurso"> <span class="error">* <?php echo $nameErr;?></span>&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp
+						<label>Instituição</label>
+						<input type="text" name="instiuicaoqualificacao"><span class="error">* <?php echo $nameErr;?></span>
+				</div>
+					
+				<div class="dadosplinha10">
+					<label>Início</label>
+					<input type="month" name="datainicioqualificacao"><span class="error">* <?php echo $nameErr;?></span>&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp
+					<label>Situação atual</label>
+						
+						<select name="qualificacaoprofconcluido">
+							<option></option>
+							<option name="qualificacaoprofconcluido">Concluído em</option>
+							<option name="qualificacaoprofconcluido">Previsão de Conclusão:</option>
+						</select>
+						 Mês e ano: <input type="month" name="datafinalqualificacao"><span class="error">* <?php echo $nameErr;?></span>
+				</div>	
+					
+		
+			</fieldset>
+
+			<fieldset>
+				<legend>
+					<h2>INFORMAÇÕES ADICIONAIS<span class="error">* <?php echo $nameErr;?></span></h2>
+				</legend>
+			
+				<div>
+					<textarea name="informacaoadicional" >"Caso você queria falar um pouco mais sobre você. Por exemplo: Prêmios, trabalho voluntário."</textarea>
+					
+				</div>	
+				<div class="botoes">
+				<input type="submit" name="enviardados">
+				
+  				</div>
+  			</fieldset>
+			</form>
+			
+	</div>
+
+			
+
+			<div class="footer" >
+			 
+			  <p> Anderson Igor Leal</p>
+			  <p> Desenvolvedor do site Criador de Curriculum Vitae</p>
+			</div>
+
+	
+</body>
+</html>

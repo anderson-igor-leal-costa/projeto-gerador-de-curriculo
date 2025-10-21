@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+} 
+
+.error {color: red;}
+
+.principal {
+  margin: 50px;
+}
+
+.dadosplinha1 {
+  width: 100%;
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+.dadosplinha2 {
+  
+    width: 100%;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.dadosplinha3 {
+  
+    width: 100%;
+     margin: 15px 0;
+       font-size: 20px;
+}
+
+.dadosplinha4 {
+  
+    width: 100%;
+     margin: 15px 0;
+       font-size: 20px;
+}
+
+.dadosplinha5 {
+  
+    width: 100%;
+     margin: 15px 0;
+       font-size: 20px;
+}
+
+.dadosplinha6 {
+  
+    width: 100%;
+     margin: 15px 0;
+       font-size: 20px;
+}
+
+.dadosplinha7 {
+  
+    width: 100%;
+     margin: 15px 0;
+       font-size: 20px;
+}
+
+.dadosplinha8 {
+  
+    width: 100%;
+     margin: 15px 0;
+       font-size: 20px;
+}
+
+.dadosplinha9 {
+  
+    width: 100%;
+     margin: 15px 0;
+       font-size: 20px;
+}
+
+.dadosplinha9 {
+  
+    width: 100%;
+     margin: 15px 0;
+       font-size: 20px;
+}
+
+.dadosplinha10 {
+  
+    width: 100%;
+     margin: 15px 0;
+       font-size: 20px;
+}
+
+
+
+.header {
+  background-color: #4682B4;
+  height: 250px;
+  padding: 50px;
+  text-align: center;
+  line-height: 10px;
+}
+
+
+.cv {
+  font-family: Verdana;
+  font-size: 60px;
+  color: white;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.sejabemvindo {
+
+  width: 1450px;
+  height: 50px;
+  background: #4682B4;
+  transition: width 5s, height 4s;
+  color: white;
+  padding-left: 40px;
+}
+
+.sejabemvindo:hover {
+  width: 1450px;
+  height: 110px;
+}
+
+
+.footer {
+ 
+  background-color: #4682B4;
+  padding: 10px;
+  text-align: center;
+  line-height: 5px;
+  color: white;
+
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+input[type=submit]{
+    display: block;
+    background-color: #ccc;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+input[type=reset]{
+    display: block;
+    background-color: #ccc;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.botoes {
+  display: inline;
+}
+
